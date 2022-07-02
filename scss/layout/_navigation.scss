@@ -1,0 +1,41 @@
+.nav {
+  padding: $padding-container;
+  background-color: $color-header;
+  color: $color-textWhite;
+}
+.nav__info {
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #5c6168;
+}
+.info__btn--btn {
+    letter-spacing: .4rem;
+}
+.nav__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.navigation__links {
+  display: flex;
+  gap: 6rem;
+}
+.links__link {
+  font-size: $fz-20;
+  &:hover {
+    color: $color-btn;
+  }
+}
+.navigation__social {
+  display: flex;
+  gap: 2rem;
+}
+.social__link {
+  font-size: $fz-20;
+  &:hover {
+    color: $color-btn;
+  }
+}

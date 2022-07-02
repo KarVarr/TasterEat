@@ -1,0 +1,32 @@
+.header {
+  padding: $padding-container;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: $color-header;
+}
+.header__information {
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.information__title {
+  font-size: 10rem;
+  margin-bottom: 2rem;
+}
+
+.information__subtitle {
+  margin-bottom: 3.5rem;
+}
+
+.information__btn {
+  max-width: 23rem;
+}
+
+.header__img {
+  max-width: 59rem;
+  max-height: 74rem;
+  margin-right: -3rem;
+}

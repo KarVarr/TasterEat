@@ -1,33 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- GOOGLE FONT -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/74199ae25c.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- TITLE -->
     <title>TasteEat</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     
     <div class="container">
-        <nav>
-            <div class="nav__info"></div>
+        <!-- NAV -->
+      <nav class="nav">
+        <div class="nav__info">
+          <a class="info__tel btn" href="tel:123456789">Call - 123 456 789</a>
 
-        </nav>
+          <div class="info__logo">
+            <img src="/img/logo.svg" alt="" />
+          </div>
 
+          <div class="info__btn">
+            <button class="info__btn--btn btn">Reservation</button>
+          </div>
+        </div>
+        <!-- ================ -->
+        <div class="nav__navigation">
+          <div class="navigation__links">
+            <a href="" class="links__link">Home</a>
+            <a href="" class="links__link">About Us</a>
+            <a href="" class="links__link">Our Menu</a>
+            <a href="" class="links__link">Pages</a>
+            <a href="" class="links__link">Blog</a>
+            <a href="" class="links__link">Contact Us</a>
+          </div>
 
-        <!-- END CONTAINER -->
+          <div class="navigation__social">
+            <a href="" class="social__link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="social__link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="social__link"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="social__link"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header__information">
+            <div class="information__title title">
+                Welcome to Restaurant
+            </div>
+            <div class="information__subtitle subtitle">
+                The people, food and the prime locations make the perfect place good friends & family to come together and have great time.
+            </div>
+            <button class="information__btn btn">
+                View Menu
+            </button>
+        </div>
+
+        <!-- ============= -->
+        <div class="header__img">
+            <img src="img/headerPic.png" alt="">
+        </div>
+      </header>
+
+      <!-- END CONTAINER -->
     </div>
-
 
     <!-- JS -->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

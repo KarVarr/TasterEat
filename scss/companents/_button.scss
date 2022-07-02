@@ -1,0 +1,13 @@
+.btn {
+    padding: 2rem 5rem;
+    border: none;
+    border: .1rem solid $color-btn;
+    background-color: transparent;
+    color: $color-btn;
+    font-size: $fz-22;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-btn;
+        color: $color-textBlack;
+    }
+} 

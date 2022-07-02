@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
   line-height: 1.15;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 a {
@@ -27,4 +28,114 @@ ol, ul, menu {
 
 .container {
   max-width: 144rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: "Cormorant Infant", serif, sans-serif;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.btn {
+  padding: 2rem 5rem;
+  border: none;
+  border: 0.1rem solid #E1B168;
+  background-color: transparent;
+  color: #E1B168;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #E1B168;
+  color: #000;
+}
+
+.header {
+  padding: 4rem 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #292E36;
+}
+
+.header__information {
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.information__title {
+  font-size: 10rem;
+  margin-bottom: 2rem;
+}
+
+.information__subtitle {
+  margin-bottom: 3.5rem;
+}
+
+.information__btn {
+  max-width: 23rem;
+}
+
+.header__img {
+  max-width: 59rem;
+  max-height: 74rem;
+  margin-right: -3rem;
+}
+
+.nav {
+  padding: 4rem 4rem 0;
+  background-color: #292E36;
+  color: #fff;
+}
+
+.nav__info {
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #5c6168;
+}
+
+.info__btn--btn {
+  letter-spacing: 0.4rem;
+}
+
+.nav__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.navigation__links {
+  display: flex;
+  gap: 6rem;
+}
+
+.links__link {
+  font-size: 2rem;
+}
+.links__link:hover {
+  color: #E1B168;
+}
+
+.navigation__social {
+  display: flex;
+  gap: 2rem;
+}
+
+.social__link {
+  font-size: 2rem;
+}
+.social__link:hover {
+  color: #E1B168;
 }
