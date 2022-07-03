@@ -11,7 +11,7 @@
   border-bottom: 1px solid #5c6168;
 }
 .info__btn--btn {
-    letter-spacing: .4rem;
+    letter-spacing: .3rem;
 }
 .nav__navigation {
   display: flex;
@@ -22,7 +22,7 @@
 .navigation__links {
   display: flex;
   gap: 6rem;
-}
+} 
 .links__link {
   font-size: $fz-20;
   &:hover {

@@ -57,6 +57,37 @@ ol, ul, menu {
   color: #000;
 }
 
+.work {
+  padding: 10rem 4rem;
+  background-color: #FFF8F5;
+  display: flex;
+  gap: 10rem;
+}
+
+.work__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.item__svg {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: #292E36;
+  display: grid;
+  place-items: center;
+}
+
+.item__info--title {
+  color: #000;
+}
+
+.item__info--subtitle {
+  color: #000;
+}
+
 .header {
   padding: 4rem 4rem 0;
   display: flex;
@@ -106,7 +137,7 @@ ol, ul, menu {
 }
 
 .info__btn--btn {
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
 }
 
 .nav__navigation {

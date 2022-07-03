@@ -1,0 +1,33 @@
+.work {
+    padding: 10rem 4rem;
+    background-color: $color-openHours;
+    display: flex;
+    gap: 10rem;
+    
+}
+.work__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.item__svg {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: $color-header;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.item__info--title {
+    color: $color-textBlack;
+}
+
+.item__info--subtitle {
+    color: $color-textBlack;
+}
+
+ 
