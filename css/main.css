@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 html {
   font-size: 62.5%;
   line-height: 1.15;
@@ -55,6 +60,69 @@ ol, ul, menu {
 .btn:hover {
   background-color: #E1B168;
   color: #000;
+}
+
+.dishes {
+  padding: 14rem 4rem 20rem;
+}
+
+.dishes__try > h4 {
+  margin-bottom: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  display: inline-block;
+  text-transform: uppercase;
+  border-top: 1px solid #E1B168;
+  border-bottom: 1px solid #E1B168;
+}
+
+.dishes__try--title {
+  color: #000;
+  margin-bottom: 1.3rem;
+}
+
+.dishes__try--subtitle {
+  color: #000;
+  margin-bottom: 4.5rem;
+}
+
+.dishes__try__img {
+  margin-bottom: 6rem;
+}
+
+.story {
+  padding: 4rem 4rem 12.5rem;
+  background-color: #FFF8F5;
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.story__blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.blogs__items {
+  display: flex;
+}
+
+.blogs__item--title {
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.blogs__item--subtitle {
+  color: #000;
+}
+
+.blogs__item--sign {
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 2rem;
 }
 
 .work {
