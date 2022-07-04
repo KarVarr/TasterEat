@@ -48,6 +48,26 @@ ol, ul, menu {
   line-height: 1.5;
 }
 
+.titleInfo {
+  margin-bottom: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  display: inline-block;
+  text-transform: uppercase;
+  border-top: 1px solid #E1B168;
+  border-bottom: 1px solid #E1B168;
+}
+
+.fz40 {
+  font-size: 4rem;
+}
+
+.fz36 {
+  font-size: 3.6rem;
+}
+
 .btn {
   padding: 2rem 5rem;
   border: none;
@@ -64,18 +84,12 @@ ol, ul, menu {
 
 .dishes {
   padding: 14rem 4rem 20rem;
+  display: flex;
+  gap: 5.5rem;
 }
 
-.dishes__try > h4 {
-  margin-bottom: 1.2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.3rem;
-  font-size: 1.5rem;
-  letter-spacing: 0.3rem;
-  display: inline-block;
-  text-transform: uppercase;
-  border-top: 1px solid #E1B168;
-  border-bottom: 1px solid #E1B168;
+.dishes__try {
+  max-width: 48.6rem;
 }
 
 .dishes__try--title {
@@ -89,7 +103,53 @@ ol, ul, menu {
 }
 
 .dishes__try__img {
+  max-width: 40rem;
   margin-bottom: 6rem;
+}
+
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-bottom: 7rem;
+}
+
+.menu__item--title {
+  color: #000;
+}
+
+.item__eat {
+  width: 80rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.eat__img {
+  max-width: 8.4rem;
+}
+
+.eat__text {
+  width: 100%;
+}
+
+.eat__text--title {
+  color: #292E36;
+}
+
+.eat__text--subtitle {
+  color: #555555;
+}
+
+.eat__text--span {
+  margin-top: 4rem;
+  width: 70%;
+  height: 0.2rem;
+  background-color: #aaa;
+}
+
+.eat__text--price {
+  color: #555555;
 }
 
 .story {
@@ -111,17 +171,17 @@ ol, ul, menu {
 }
 
 .blogs__item--title {
-  color: #000;
+  color: #292E36;
   margin-bottom: 1.5rem;
 }
 
 .blogs__item--subtitle {
-  color: #000;
+  color: #555555;
 }
 
 .blogs__item--sign {
   text-transform: uppercase;
-  color: #000;
+  color: #555555;
   margin-bottom: 2rem;
 }
 
@@ -149,11 +209,11 @@ ol, ul, menu {
 }
 
 .item__info--title {
-  color: #000;
+  color: #292E36;
 }
 
 .item__info--subtitle {
-  color: #000;
+  color: #555555;
 }
 
 .header {

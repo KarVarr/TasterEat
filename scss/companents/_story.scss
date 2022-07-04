@@ -15,17 +15,17 @@
     display: flex;
 }
 .blogs__item--title {
-    color: $color-textBlack;
+    color: $color-textTitle;
     margin-bottom: 1.5rem;
 }
 
 .blogs__item--subtitle {
-    color: $color-textBlack;
+    color: $color-textSubTitle;
 }
 
 
 .blogs__item--sign {
     text-transform: uppercase;
-    color: $color-textBlack;
+    color: $color-textSubTitle;
     margin-bottom: 2rem;
 }
