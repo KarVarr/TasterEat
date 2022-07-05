@@ -82,6 +82,66 @@ ol, ul, menu {
   color: #000;
 }
 
+.clients {
+  padding: 12rem 4rem;
+  background-color: #292E36;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.clients__text--titleInfo {
+  color: #fff;
+}
+
+.clients__slider {
+  display: flex;
+  gap: 3rem;
+}
+
+.slider__box {
+  max-width: 54rem;
+  padding: 2rem;
+  background-color: #343942;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.box__header {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.header__img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.header__info--subtitle {
+  color: #E1B168;
+}
+
+.box__line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #797E89;
+}
+
+.clients__dots {
+  display: flex;
+  align-self: center;
+  gap: 1rem;
+}
+
+.clients__dots--dot {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
 .dishes {
   padding: 14rem 4rem 20rem;
   display: flex;
@@ -150,6 +210,32 @@ ol, ul, menu {
 
 .eat__text--price {
   color: #555555;
+}
+
+.offers {
+  padding: 12rem 4rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.offers__text {
+  text-align: center;
+}
+
+.offers__text--title {
+  color: #292E36;
+  margin-bottom: 1.5rem;
+}
+
+.offres__text--subtitle {
+  color: #555555;
+}
+
+.offers__menu {
+  display: flex;
+  gap: 3rem;
+  width: 50%;
 }
 
 .story {

@@ -1,0 +1,26 @@
+.offers {
+    padding: 12rem 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.offers__text {
+    text-align: center;
+    
+    
+}
+
+.offers__text--title {
+    color: $color-textTitle;
+    margin-bottom: 1.5rem;
+}
+
+.offres__text--subtitle {
+    color: $color-textSubTitle;
+}
+
+.offers__menu {
+    display: flex;
+    gap: 3rem;
+    width: 50%;
+}
