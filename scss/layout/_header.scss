@@ -1,5 +1,6 @@
 .header {
-  padding: $padding-container;
+  padding: 4rem 4rem 0;
+
   display: flex;
   justify-content: space-between;
 
@@ -26,7 +27,6 @@
 }
 
 .header__img {
-  max-width: 59rem;
-  max-height: 74rem;
+ 
   margin-right: -3rem;
 }

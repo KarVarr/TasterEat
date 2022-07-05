@@ -35,7 +35,15 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+
+  &:hover {
+    color: #000;
+    background-color: rgba(235, 233, 233, 0.299);
+    border-radius: 1rem;
+    cursor: pointer;
+  }
 }
+
 .eat__img {
   max-width: 8.4rem;
 }
