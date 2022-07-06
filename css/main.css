@@ -258,7 +258,7 @@ ol, ul, menu {
   filter: brightness(50%);
 }
 
-.btn {
+.img__btn {
   position: absolute;
   top: 50%;
   left: 50%;
