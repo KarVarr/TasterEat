@@ -323,6 +323,38 @@ ol, ul, menu {
   align-self: center;
 }
 
+.services {
+  padding: 14rem 4rem;
+  background-color: #292E36;
+  display: flex;
+  gap: 10rem;
+}
+
+.services__text {
+  color: #fff;
+}
+
+.services__cards {
+  display: flex;
+  gap: 3rem;
+}
+
+.cards__item {
+  width: 25rem;
+  height: 23rem;
+  border: 2rem solid #323841;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.item__text > p {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
 .story {
   padding: 4rem 4rem 12.5rem;
   background-color: #FFF8F5;

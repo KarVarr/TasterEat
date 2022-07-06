@@ -1,0 +1,29 @@
+.services {
+  padding: 14rem 4rem;
+  background-color: $color-header;
+  display: flex;
+  gap: 10rem;
+}
+.services__text {
+  color: $color-textWhite;
+}
+
+.services__cards {
+  display: flex;
+  gap: 3rem;
+}
+.cards__item {
+  width: 25rem;
+  height: 23rem;
+  border: 2rem solid $color-cardBox;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.item__text > p {
+  color: $color-textWhite;
+  font-size: 2.5rem;
+}
