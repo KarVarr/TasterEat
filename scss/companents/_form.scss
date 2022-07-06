@@ -1,0 +1,58 @@
+.form {
+  padding: 14rem 26rem;
+  background: url('../../img/footer.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.form__box {
+  padding: 14rem;
+  background-color: $color-form;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.4rem;
+}
+.form__text {
+  color: $color-textWhite;
+  text-align: center;
+}
+
+.form__input {
+  max-width: 64rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  input {
+    font-size: 2rem;
+    outline: none;
+    color: $color-textWhite;
+    background-color: transparent;
+    border: none;
+    border: 0.1rem solid $color-input;
+    padding: 2rem 3rem;
+  }
+  ::placeholder {
+    color: $color-lineBoxLight;
+  }
+}
+.input__name {
+  display: flex;
+  gap: 2rem;
+
+  input {
+    padding: 2rem 3rem;
+    width: 100%;
+  }
+}
+.input__persons {
+  display: flex;
+
+  gap: 3rem;
+  input {
+    width: 100%;
+  }
+}

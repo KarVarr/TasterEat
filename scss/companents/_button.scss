@@ -1,14 +1,24 @@
 .btn {
-    padding: 2rem 5rem;
-    border: none;
-    border: .1rem solid $color-btn;
-    background-color: transparent;
-    color: $color-btn;
-    font-size: $fz-22;
-    font-family: $text-subtitle;
-    cursor: pointer;
-    &:hover {
-        background-color: $color-btn;
-        color: $color-textBlack;
-    }
-} 
+  padding: 2rem 5rem;
+  border: none;
+  border: 0.1rem solid $color-btn;
+  background-color: transparent;
+  color: $color-btn;
+  font-size: $fz-22;
+  font-family: $text-subtitle;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-btn;
+    color: $color-textBlack;
+  }
+}
+
+.form__btn--white {
+  background-color: transparent;
+  color: $color-btn;
+  border: 0.1rem solid $color-input;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
