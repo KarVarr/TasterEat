@@ -1,0 +1,52 @@
+.news {
+  padding: 14rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.news__text {
+  text-align: center;
+}
+
+.news__text--title {
+  margin-bottom: 1.3rem;
+  color: $color-textTitle;
+}
+
+.news__text--subtitle,
+.card__text--subtitle {
+  color: $color-textSubTitle;
+}
+
+.news__blog {
+  display: flex;
+  gap: 5rem;
+}
+.blog__card {
+  border: 0.1rem solid $color-lineBoxLight;
+}
+.card__img {
+  margin-bottom: 5rem;
+  position: relative;
+}
+.card__img > img {
+  filter: brightness(50%);
+}
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__text {
+  padding: 0 5rem 5rem;
+}
+.card__text--titleInfo {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+.card__text--title {
+  margin-bottom: 2.4rem;
+  color: $color-textTitle;
+}

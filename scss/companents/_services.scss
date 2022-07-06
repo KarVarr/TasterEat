@@ -2,12 +2,15 @@
   padding: 14rem 4rem;
   background-color: $color-header;
   display: flex;
+  align-items: center;
   gap: 10rem;
 }
 .services__text {
   color: $color-textWhite;
 }
-
+.services__text--title {
+  margin-bottom: 1.3rem;
+}
 .services__cards {
   display: flex;
   gap: 3rem;
