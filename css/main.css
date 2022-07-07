@@ -22,6 +22,16 @@ html {
   line-height: 1.15;
   font-family: "Josefin Sans", sans-serif;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -275,6 +285,21 @@ menu {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 75em) {
+  .form {
+    padding: 12rem 20rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .form {
+    padding: 8rem 14rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .form {
+    padding: 4rem 8rem;
+  }
+}
 
 .form__box {
   padding: 14rem;
@@ -284,6 +309,16 @@ menu {
   align-items: center;
   justify-content: center;
   gap: 3.4rem;
+}
+@media only screen and (max-width: 75em) {
+  .form__box {
+    padding: 6rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .form__box {
+    padding: 4rem;
+  }
 }
 
 .form__text {
@@ -300,7 +335,7 @@ menu {
   gap: 3rem;
 }
 .form__input input {
-  font-size: 2rem;
+  font-size: 1.7rem;
   outline: none;
   color: #fff;
   background-color: transparent;
@@ -331,6 +366,11 @@ menu {
   padding: 2rem 1rem 2rem 3rem;
   width: 100%;
 }
+@media only screen and (max-width: 37.5em) {
+  .input__name {
+    flex-direction: column;
+  }
+}
 
 .input__persons {
   display: flex;
@@ -341,6 +381,11 @@ menu {
 }
 .input__persons input {
   width: 100%;
+}
+@media only screen and (max-width: 37.5em) {
+  .input__persons {
+    flex-direction: column;
+  }
 }
 
 .news {
@@ -426,6 +471,7 @@ menu {
 
 .offers__menu {
   display: flex;
+  align-content: center;
   gap: 3rem;
   width: 50%;
 }
@@ -457,6 +503,7 @@ menu {
 .popular__menu {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 
@@ -582,7 +629,9 @@ menu {
   padding: 10rem 4rem;
   background-color: #fff8f5;
   display: flex;
-  gap: 10rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 .work__item {
@@ -593,12 +642,13 @@ menu {
 }
 
 .item__svg {
-  width: 8rem;
+  min-width: 8rem;
   height: 8rem;
   border-radius: 50%;
   background-color: #292e36;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .item__info--title {
@@ -634,6 +684,7 @@ menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 5rem;
 }
 
 .contact__titleInfo,

@@ -2,7 +2,9 @@
     padding: 10rem 4rem;
     background-color: $color-openHours;
     display: flex;
-    gap: 10rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
     
 }
 .work__item {
@@ -12,12 +14,13 @@
     gap: 2rem;
 }
 .item__svg {
-    width: 8rem;
+    min-width: 8rem;
     height: 8rem;
     border-radius: 50%;
     background-color: $color-header;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

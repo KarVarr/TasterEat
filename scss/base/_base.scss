@@ -19,6 +19,12 @@ html {
   font-size: 62.5%;
   line-height: 1.15;
   font-family: $text-subtitle;
+  @include respond(tab-land){
+    font-size: 56.25%;
+  }
+  @include respond(tab-port){
+    font-size: 50%;
+  }
 }
 
 // INPUT

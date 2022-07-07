@@ -1,9 +1,18 @@
 .form {
   width: 100%;
   padding: 14rem 26rem;
-  background: url('../../img/footer.png') ;
+  background: url('../../img/footer.png');
   background-size: cover;
   background-repeat: no-repeat;
+  @include respond(tab-land) {
+    padding: 12rem 20rem;
+  }
+  @include respond(tab-port) {
+    padding: 8rem 14rem;
+  }
+  @include respond(phone) {
+    padding: 4rem 8rem;
+  }
 }
 
 .form__box {
@@ -14,6 +23,12 @@
   align-items: center;
   justify-content: center;
   gap: 3.4rem;
+  @include respond(tab-land) {
+    padding: 6rem;
+  }
+  @include respond(tab-port) {
+    padding: 4rem;
+  }
 }
 .form__text {
   color: $color-textWhite;
@@ -28,7 +43,7 @@
   justify-content: space-between;
   gap: 3rem;
   input {
-    font-size: 2rem;
+    font-size: 1.7rem;
     outline: none;
     color: $color-textWhite;
     background-color: transparent;
@@ -52,6 +67,9 @@
     padding: 2rem 1rem 2rem 3rem;
     width: 100%;
   }
+  @include respond(phone) {
+    flex-direction: column;
+  }
 }
 .input__persons {
   display: flex;
@@ -61,5 +79,8 @@
   gap: 2rem;
   input {
     width: 100%;
+  }
+  @include respond(phone) {
+    flex-direction: column;
   }
 }
