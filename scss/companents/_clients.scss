@@ -30,6 +30,15 @@
 .header__img--client {
   width: 10rem;
   height: 10rem;
+  position: relative;
+  &::after {
+    content: url('../../img/F.svg');
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+  }
 }
 
 .header__info--subtitle {

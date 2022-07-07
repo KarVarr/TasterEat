@@ -158,6 +158,15 @@ menu {
 .header__img--client {
   width: 10rem;
   height: 10rem;
+  position: relative;
+}
+.header__img--client::after {
+  content: url("../../img/F.svg");
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
 }
 
 .header__info--subtitle {
@@ -260,9 +269,10 @@ menu {
 }
 
 .form {
+  width: 100%;
   padding: 14rem 26rem;
   background: url("../../img/footer.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -597,6 +607,91 @@ menu {
 
 .item__info--subtitle {
   color: #555555;
+}
+
+.footer {
+  padding: 14rem 4rem 6rem;
+  background-color: #292e36;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__links--social {
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__titleInfo,
+.hours__titleInfo {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.contact__address--tel,
+.contact__address--email {
+  color: #e1b168;
+}
+
+.contact__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__input--btn {
+  border-color: #858585;
+  border-left: none;
+}
+
+.input__form {
+  display: flex;
+}
+.input__form label {
+  width: 100%;
+}
+.input__form input {
+  width: 100%;
+  padding: 2rem 9rem 2rem 3rem;
+  font-size: 2.2rem;
+  border: none;
+  border: 0.1rem solid #858585;
+  border-right: none;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.contact__input--text {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact__hours {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hours__days--weekdays {
+  text-align: right;
+}
+.hours__days--weekdays span {
+  color: #e1b168;
 }
 
 .header {

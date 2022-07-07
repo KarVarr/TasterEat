@@ -1,0 +1,80 @@
+.footer {
+  padding: 14rem 4rem 6rem;
+  background-color: $color-header;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__links--social {
+  font-size: 2rem;
+  color: $color-textWhite;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__titleInfo,
+.hours__titleInfo {
+  color: $color-textWhite;
+  margin-bottom: 3rem;
+}
+
+
+.contact__address--tel,
+.contact__address--email {
+  color: $color-btn;
+}
+
+.contact__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__input--btn {
+  border-color: $color-input;
+  border-left: none;
+}
+.input__form {
+  display: flex;
+  label {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    padding: 2rem 9rem 2rem 3rem;
+    font-size: $fz-22;
+    border: none;
+    border: 0.1rem solid $color-input;
+    border-right: none;
+    background-color: transparent;
+    color: $color-textWhite;
+    outline: none;
+  }
+}
+.contact__input--text {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.contact__hours {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hours__days--weekdays {
+  text-align: right;
+  span {
+    color: $color-btn;
+  }
+}
