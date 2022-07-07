@@ -286,7 +286,7 @@ menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 3rem;
 }
 .form__input input {
@@ -309,17 +309,25 @@ menu {
 }
 
 .input__name {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   gap: 2rem;
 }
+.input__name label {
+  width: 100%;
+}
 .input__name input {
-  padding: 2rem 3rem;
+  padding: 2rem 1rem 2rem 3rem;
   width: 100%;
 }
 
 .input__persons {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
+}
+.input__persons label {
+  width: 100%;
 }
 .input__persons input {
   width: 100%;
