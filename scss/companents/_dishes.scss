@@ -2,9 +2,19 @@
   padding: 14rem 4rem 20rem;
   display: flex;
   gap: 5.5rem;
+  @include respond(tab-port){
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .dishes__try {
   max-width: 48.6rem;
+  @include respond(tab-port){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
 }
 
 .dishes__try--title {
@@ -19,7 +29,9 @@
   max-width: 40rem;
   margin-bottom: 6rem;
 }
-
+.dishes__menu {
+  width: 100%;
+}
 .menu__item {
   display: flex;
   flex-direction: column;
@@ -28,6 +40,9 @@
 }
 .menu__item--title {
   color: $color-textBlack;
+  @include respond(phone){
+    text-align: center;
+  }
 }
 
 .item__eat {
@@ -35,12 +50,28 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-
   &:hover {
     color: #000;
     background-color: rgba(235, 233, 233, 0.299);
     border-radius: 1rem;
     cursor: pointer;
+  }
+  @include respond(tab-land){
+    width: 70rem;
+  }
+  @include respond(tab-port){
+    width: 100%;
+  }
+  @include respond(phone){
+    padding: 2rem;
+    background-color: $color-openHours;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+    &:hover {
+    cursor: pointer;
+  }
   }
 }
 
@@ -62,6 +93,16 @@
   width: 70%;
   height: 0.2rem;
   background-color: $color-span;
+  @include respond(tab-land){
+    width: 30%;
+  }
+  @include respond(tab-port){
+    width: 100%;
+  }
+  @include respond(phone){
+    width: 10%;
+  }
+  
 }
 .eat__text--price {
   color: $color-textSubTitle;

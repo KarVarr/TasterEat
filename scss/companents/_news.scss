@@ -21,6 +21,11 @@
 .news__blog {
   display: flex;
   gap: 5rem;
+  @include respond(tab-port) {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .blog__card {
   border: 0.1rem solid $color-lineBoxLight;

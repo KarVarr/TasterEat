@@ -212,9 +212,22 @@ menu {
   display: flex;
   gap: 5.5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .dishes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .dishes__try {
   max-width: 48.6rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .dishes__try {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .dishes__try--title {
@@ -232,6 +245,10 @@ menu {
   margin-bottom: 6rem;
 }
 
+.dishes__menu {
+  width: 100%;
+}
+
 .menu__item {
   display: flex;
   flex-direction: column;
@@ -241,6 +258,11 @@ menu {
 
 .menu__item--title {
   color: #000;
+}
+@media only screen and (max-width: 37.5em) {
+  .menu__item--title {
+    text-align: center;
+  }
 }
 
 .item__eat {
@@ -254,6 +276,29 @@ menu {
   background-color: rgba(235, 233, 233, 0.299);
   border-radius: 1rem;
   cursor: pointer;
+}
+@media only screen and (max-width: 75em) {
+  .item__eat {
+    width: 70rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .item__eat {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .item__eat {
+    padding: 2rem;
+    background-color: #fff8f5;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+  }
+  .item__eat:hover {
+    cursor: pointer;
+  }
 }
 
 .eat__img {
@@ -277,6 +322,21 @@ menu {
   width: 70%;
   height: 0.2rem;
   background-color: #aaa;
+}
+@media only screen and (max-width: 75em) {
+  .eat__text--span {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .eat__text--span {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .eat__text--span {
+    width: 10%;
+  }
 }
 
 .eat__text--price {
@@ -418,6 +478,13 @@ menu {
   display: flex;
   gap: 5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .news__blog {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .blog__card {
   border: 0.1rem solid #dcdcdc;
@@ -475,10 +542,18 @@ menu {
 }
 
 .offers__menu {
+  width: 50%;
   display: flex;
   align-content: center;
   gap: 3rem;
-  width: 50%;
+}
+@media only screen and (max-width: 56.25em) {
+  .offers__menu {
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .offers__menu > img {
@@ -608,6 +683,7 @@ menu {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1 1 auto;
   gap: 1.5rem;
 }
 
