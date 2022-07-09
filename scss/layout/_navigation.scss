@@ -5,13 +5,18 @@
 }
 .nav__info {
   padding-bottom: 5rem;
+  border-bottom: 1px solid #5c6168;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #5c6168;
+  gap: 2rem;
+  @include respond(tab-port) {
+    flex-direction: column;
+    gap: 5rem;
+  }
 }
 .info__btn--btn {
-    letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
 }
 .nav__navigation {
   display: flex;
@@ -22,7 +27,7 @@
 .navigation__links {
   display: flex;
   gap: 6rem;
-} 
+}
 .links__link {
   font-size: $fz-20;
   &:hover {

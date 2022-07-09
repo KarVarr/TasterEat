@@ -24,12 +24,17 @@ html {
 }
 @media only screen and (max-width: 75em) {
   html {
-    font-size: 56.25%;
+    font-size: 53.25%;
   }
 }
 @media only screen and (max-width: 56.25em) {
   html {
     font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 48%;
   }
 }
 @media only screen and (min-width: 112.5em) {
@@ -234,6 +239,7 @@ menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 }
 
@@ -930,12 +936,21 @@ menu {
 
 .header {
   padding: 4rem 4rem 0;
+  background-color: #292e36;
   display: flex;
   justify-content: space-between;
-  background-color: #292e36;
+  gap: 4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .header__information {
+  padding-bottom: 2rem;
   max-width: 60rem;
   display: flex;
   flex-direction: column;
@@ -952,12 +967,13 @@ menu {
   margin-bottom: 3.5rem;
 }
 
-.information__btn {
-  max-width: 23rem;
-}
-
 .header__img {
   margin-right: -3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .header__img {
+    margin-right: 0;
+  }
 }
 
 .nav {
@@ -968,10 +984,17 @@ menu {
 
 .nav__info {
   padding-bottom: 5rem;
+  border-bottom: 1px solid #5c6168;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #5c6168;
+  gap: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .nav__info {
+    flex-direction: column;
+    gap: 5rem;
+  }
 }
 
 .info__btn--btn {

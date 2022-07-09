@@ -2,18 +2,18 @@
   padding: 14rem 4rem 20rem;
   display: flex;
   gap: 5.5rem;
-  @include respond(tab-port){
+  @include respond(tab-port) {
     flex-direction: column;
     align-items: center;
   }
 }
 .dishes__try {
   max-width: 48.6rem;
-  @include respond(tab-port){
+  @include respond(tab-port) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    text-align: center;
   }
 }
 
@@ -40,7 +40,7 @@
 }
 .menu__item--title {
   color: $color-textBlack;
-  @include respond(phone){
+  @include respond(phone) {
     text-align: center;
   }
 }
@@ -56,13 +56,13 @@
     border-radius: 1rem;
     cursor: pointer;
   }
-  @include respond(tab-land){
+  @include respond(tab-land) {
     width: 70rem;
   }
-  @include respond(tab-port){
+  @include respond(tab-port) {
     width: 100%;
   }
-  @include respond(phone){
+  @include respond(phone) {
     padding: 2rem;
     background-color: $color-openHours;
     flex-direction: column;
@@ -70,8 +70,8 @@
     text-align: center;
     border-radius: 1rem;
     &:hover {
-    cursor: pointer;
-  }
+      cursor: pointer;
+    }
   }
 }
 
@@ -93,16 +93,15 @@
   width: 70%;
   height: 0.2rem;
   background-color: $color-span;
-  @include respond(tab-land){
+  @include respond(tab-land) {
     width: 30%;
   }
-  @include respond(tab-port){
+  @include respond(tab-port) {
     width: 100%;
   }
-  @include respond(phone){
+  @include respond(phone) {
     width: 10%;
   }
-  
 }
 .eat__text--price {
   color: $color-textSubTitle;
