@@ -32,6 +32,11 @@ html {
     font-size: 50%;
   }
 }
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -562,9 +567,21 @@ menu {
   align-items: center;
   gap: 10rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .services {
+    flex-direction: column;
+  }
+}
 
 .services__text {
+  max-width: 30%;
   color: #fff;
+}
+@media only screen and (max-width: 37.5em) {
+  .services__text {
+    max-width: 100%;
+    text-align: center;
+  }
 }
 
 .services__text--title {
@@ -575,9 +592,16 @@ menu {
   display: flex;
   gap: 3rem;
 }
+@media only screen and (max-width: 75em) {
+  .services__cards {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .cards__item {
-  width: 25rem;
+  min-width: 25rem;
   height: 23rem;
   border: 2rem solid #323841;
   display: flex;
