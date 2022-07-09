@@ -5,7 +5,11 @@
   flex-direction: column;
   gap: 8rem;
 }
-
+.clients__text {
+  @include respond(tab-port) {
+    text-align: center;
+  }
+}
 .clients__text--titleInfo {
   color: $color-textWhite;
 }
@@ -13,9 +17,10 @@
 .clients__slider {
   display: flex;
   gap: 3rem;
+  overflow: auto;
 }
 .slider__box {
-  max-width: 54rem;
+  min-width: 54rem;
   padding: 2rem;
   background-color: $color-sliderBox;
   display: flex;

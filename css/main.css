@@ -95,7 +95,7 @@ menu {
 
 .titleInfo {
   margin-bottom: 1.2rem;
-  padding-top: 0.5rem;
+  padding-top: 0.6rem;
   padding-bottom: 0.3rem;
   font-size: 1.5rem;
   letter-spacing: 0.3rem;
@@ -146,6 +146,12 @@ menu {
   gap: 8rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .clients__text {
+    text-align: center;
+  }
+}
+
 .clients__text--titleInfo {
   color: #fff;
 }
@@ -153,10 +159,11 @@ menu {
 .clients__slider {
   display: flex;
   gap: 3rem;
+  overflow: auto;
 }
 
 .slider__box {
-  max-width: 54rem;
+  min-width: 54rem;
   padding: 2rem;
   background-color: #343942;
   display: flex;
@@ -788,11 +795,31 @@ menu {
   flex-direction: column;
   gap: 5rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .footer {
+    padding: 6rem 4rem 6rem;
+  }
+}
 
 .footer__links {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer__links {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.footer__links--img {
+  margin-left: 8rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer__links--img {
+    margin-left: 0;
+  }
 }
 
 .footer__links--social {
@@ -807,6 +834,14 @@ menu {
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer__contact {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .contact__titleInfo,
@@ -824,6 +859,11 @@ menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .contact__input {
+    order: -1;
+  }
 }
 
 .contact__input--btn {
@@ -848,6 +888,17 @@ menu {
   color: #fff;
   outline: none;
 }
+@media only screen and (max-width: 37.5em) {
+  .input__form input::-moz-placeholder {
+    font-size: 1.7rem;
+  }
+  .input__form input:-ms-input-placeholder {
+    font-size: 1.7rem;
+  }
+  .input__form input::placeholder {
+    font-size: 1.7rem;
+  }
+}
 
 .contact__input--text {
   margin-bottom: 2rem;
@@ -859,12 +910,22 @@ menu {
   flex-direction: column;
   align-items: flex-end;
 }
+@media only screen and (max-width: 56.25em) {
+  .contact__hours {
+    align-items: center;
+  }
+}
 
 .hours__days--weekdays {
   text-align: right;
 }
 .hours__days--weekdays span {
   color: #e1b168;
+}
+@media only screen and (max-width: 56.25em) {
+  .hours__days--weekdays {
+    text-align: center;
+  }
 }
 
 .header {
