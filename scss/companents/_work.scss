@@ -1,36 +1,43 @@
 .work {
-    padding: 10rem 4rem;
-    background-color: $color-openHours;
-    display: flex;
-    justify-content: space-between;
+  padding: 10rem 4rem;
+  background-color: $color-openHours;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    
+    gap: 6rem;
+  }
 }
 .work__item {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  @include respond(tab-port) {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    text-align: center;
+  }
 }
 .item__svg {
-    min-width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    background-color: $color-header;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: $color-header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
 .item__info--title {
-    color: $color-textTitle;
+  color: $color-textTitle;
 }
 
 .item__info--subtitle {
-    color: $color-textSubTitle;
+  color: $color-textSubTitle;
 }
-
- 

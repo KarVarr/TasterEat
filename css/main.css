@@ -699,6 +699,11 @@ menu {
   align-items: center;
   gap: 4.5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .story {
+    flex-direction: column;
+  }
+}
 
 .story__blogs {
   display: flex;
@@ -708,6 +713,7 @@ menu {
 
 .blogs__items {
   display: flex;
+  gap: 2rem;
 }
 
 .blogs__item--title {
@@ -733,12 +739,28 @@ menu {
   align-items: center;
   gap: 2rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .work {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+}
 
 .work__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .work__item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .item__svg {
