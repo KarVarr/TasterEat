@@ -369,7 +369,7 @@ menu {
 .form {
   width: 100%;
   padding: 14rem 26rem;
-  background: url("../../img/footer.png");
+  background: url("../img/footer.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
