@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  @include respond(phone) {
+    padding: 6rem 4rem;
+   
+  }
 }
 .offers__text {
   text-align: center;

@@ -11,6 +11,9 @@
     align-items: center;
     gap: 6rem;
   }
+  @include respond(phone) {
+    padding: 6rem 4rem;
+  }
 }
 .work__item {
   display: flex;

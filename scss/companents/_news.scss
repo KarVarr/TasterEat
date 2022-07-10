@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  @include respond(phone) {
+    padding: 6rem 4rem;
+  }
 }
 .news__text {
   text-align: center;

@@ -7,6 +7,9 @@
   @include respond(phone) {
     flex-direction: column;
   }
+  @include respond(phone) {
+    padding: 6rem 4rem;
+  }
 }
 .services__text {
   max-width: 30%;

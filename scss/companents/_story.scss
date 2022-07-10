@@ -7,6 +7,9 @@
   @include respond(tab-port) {
     flex-direction: column;
   }
+  @include respond(phone) {
+    padding: 6rem 4rem;
+  }
 }
 
 .story__blogs {
