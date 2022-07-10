@@ -1002,15 +1002,33 @@ menu {
 }
 
 .nav__navigation {
+  padding: 2rem 0;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
 }
 
 .navigation__links {
   display: flex;
   gap: 6rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation__links {
+    position: absolute;
+    top: 1rem;
+    right: -100%;
+    background-color: #e1b168;
+    padding: 5rem;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    transition: all 0.3s ease-in;
+  }
+}
+
+.active {
+  right: 0;
 }
 
 .links__link {
@@ -1030,4 +1048,44 @@ menu {
 }
 .social__link:hover {
   color: #e1b168;
+}
+
+.buger__menu {
+  position: relative;
+  right: 1rem;
+  width: 4rem;
+  height: 3rem;
+  display: flex;
+  align-self: center;
+}
+
+.bar {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #fff;
+  z-index: 10;
+}
+.bar::after, .bar::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #fff;
+}
+.bar::before {
+  content: "";
+  top: -1rem;
+}
+.bar::after {
+  content: "";
+  top: 1rem;
+}
+
+.buger__menu + .bar.active {
+  transform: rotate(45deg);
 }
