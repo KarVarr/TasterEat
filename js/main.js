@@ -20,6 +20,7 @@ const blog = document.querySelector('#blog');
 const contactUs = document.querySelector('#contactUs');
 const reservationBtn = document.querySelector('.info__btn--btn');
 const veiwBtn = document.querySelector('.information__btn--btn');
+const logoScrollToUp = document.querySelector('.footer__links--img');
 
 //BURGER MENU
 menuBtn?.addEventListener('click', e => {
@@ -28,18 +29,20 @@ menuBtn?.addEventListener('click', e => {
   menuBtn.classList.toggle('active');
 });
 
-links.forEach(n => n.addEventListener('click', () => {
-  if (
-    menuLink.classList.contains('active') &&
-    menuBtn.classList.contains('active')
-  ) {
-    menuLink.classList.remove('active');
-    menuBtn.classList.remove('active');
-  }else{
-    menuLink.classList.add('active');
-    menuBtn.classList.add('active');
-  }
-}));
+links.forEach(n =>
+  n.addEventListener('click', () => {
+    if (
+      menuLink.classList.contains('active') &&
+      menuBtn.classList.contains('active')
+    ) {
+      menuLink.classList.remove('active');
+      menuBtn.classList.remove('active');
+    } else {
+      menuLink.classList.add('active');
+      menuBtn.classList.add('active');
+    }
+  })
+);
 
 //NAV LINKS
 
@@ -78,4 +81,11 @@ reservationBtn.addEventListener('click', e => {
 veiwBtn.addEventListener('click', e => {
   e.preventDefault();
   vievMenu.scrollIntoView({ behavior: 'smooth' });
+});
+
+//Logo in the footer for scroll to up
+
+logoScrollToUp.addEventListener('click', e => {
+  e.preventDefault();
+  window.scrollTo(0, 0);
 });

@@ -861,6 +861,7 @@ menu {
 
 .footer__links--img {
   margin-left: 8rem;
+  cursor: pointer;
 }
 @media only screen and (max-width: 56.25em) {
   .footer__links--img {
@@ -1114,7 +1115,6 @@ menu {
     align-self: center;
     transition: all 0.2s ease;
   }
-
   .bar {
     position: relative;
     top: 50%;
@@ -1141,7 +1141,6 @@ menu {
     content: "";
     top: 1rem;
   }
-
   .burger__menu.active {
     transform: translateY(0.5rem) rotate(45deg);
   }

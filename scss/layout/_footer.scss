@@ -19,6 +19,7 @@
 }
 .footer__links--img {
   margin-left: 8rem;
+  cursor: pointer;
   @include respond(tab-port) {
     margin-left: 0;
   }
