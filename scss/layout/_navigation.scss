@@ -14,10 +14,6 @@
   align-items: center;
   gap: 2rem;
   @include respond(tab-port) {
-    flex-direction: column;
-    gap: 5rem;
-  }
-  @include respond(phone) {
     display: none;
   }
 }
@@ -35,9 +31,10 @@
   display: flex;
   gap: 6rem;
   @include respond(tab-port) {
+    display: none;
     position: absolute;
     top: 1rem;
-    right: -100%;
+    right: 0;
     background-color: $color-textSubTitle;
     padding: 5rem;
     flex-direction: column;
@@ -47,7 +44,7 @@
   }
 }
 .active {
-  right: 0;
+  display: flex;
 }
 
 .links__link {
@@ -80,7 +77,6 @@
     height: 3rem;
     display: flex;
     align-self: center;
-    transition: all 0.2s ease;
   }
   .bar {
     position: relative;
@@ -92,7 +88,6 @@
     height: 0.3rem;
     background-color: #fff;
     z-index: 10;
-
     &::after,
     &::before {
       content: '';
@@ -100,6 +95,8 @@
       width: 100%;
       height: 0.3rem;
       background-color: #fff;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
     }
     &::before {
       content: '';
@@ -110,7 +107,13 @@
       top: 1rem;
     }
   }
-  .burger__menu.active {
-    transform: translateY(0.5rem) rotate(45deg);
+  .burger__menu.active > .bar::before {
+    transform: translateY(1rem) rotate(-225deg);
+  }
+  .burger__menu.active > .bar::after {
+    transform: translateY(-1rem) rotate(225deg);
+  }
+  .burger__menu.active > .bar {
+    background-color: transparent;
   }
 }

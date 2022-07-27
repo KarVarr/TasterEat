@@ -21,6 +21,9 @@
 .information__title {
   font-size: 10rem;
   margin-bottom: 2rem;
+  @include respond(phone) {
+    font-size: 8rem;
+  }
 }
 
 .information__subtitle {
