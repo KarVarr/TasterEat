@@ -3,7 +3,10 @@
   background-color: $color-header;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  //justify-content: space-between;
+  gap: 3rem;
+  position: relative;
+  overflow: hidden;
   @include respond(phone) {
     padding: 6rem 4rem;
   }
@@ -18,18 +21,57 @@
 }
 
 .clients__slider {
-  display: flex;
-  gap: 3rem;
-  overflow: auto;
+  margin: 0 auto;
+  max-width: 100rem;
+  height: 30rem;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 }
 .slider__box {
-  min-width: 54rem;
+  width: 35%;
   padding: 2rem;
   background-color: $color-sliderBox;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
+
+  position: absolute;
+  top: 35%;
+  //left: 50%;
+  transform: translate(0%, -35%);
+
+  transition: all 1s ease-in-out;
 }
+
+.slider__btn--left,
+.slider__btn--right {
+  order: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.slider__btn--left {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  z-index: 1;
+}
+.slider__btn--right {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  z-index: 1;
+}
+
 .box__header {
   display: flex;
   gap: 5rem;

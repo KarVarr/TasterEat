@@ -22,6 +22,45 @@ const reservationBtn = document.querySelector('.info__btn--btn');
 const veiwBtn = document.querySelector('.information__btn--btn');
 const logoScrollToUp = document.querySelector('.footer__links--img');
 
+//SLIDER
+const slides = document.querySelectorAll('.slider__box');
+const slider = document.querySelector('slider__box');
+const btnRight = document.querySelector('.slider__btn--right');
+const btnLeft = document.querySelector('.slider__btn--left');
+
+curSlide = 0;
+maxSlide = slides.length;
+//refactor function
+const goToSlide = (slide) => {
+  slides.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+  );
+}
+goToSlide(0)
+
+btnRight.addEventListener('click', () => {
+  if (curSlide === maxSlide - 1) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+  goToSlide(curSlide);
+  
+});
+
+btnLeft.addEventListener('click', () => {
+  if (curSlide === 0) {
+    curSlide = maxSlide - 1;
+  } else {
+    curSlide--;
+  }
+
+  goToSlide(curSlide);
+});
+
+
+
+
 //BURGER MENU
 menuBtn?.addEventListener('click', e => {
   e.preventDefault();
