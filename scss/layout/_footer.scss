@@ -83,8 +83,9 @@
     color: $color-textWhite;
     outline: none;
     @include respond(phone) {
+      padding: 2rem 5rem 2rem 3rem;
       &::placeholder {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
       }
     }
   }
@@ -92,6 +93,11 @@
 .contact__input--text {
   margin-bottom: 2rem;
   text-align: center;
+}
+.contact__input--btn {
+  @include respond(phone) {
+    padding: 2rem 3.5rem;
+  }
 }
 .contact__hours {
   display: flex;
