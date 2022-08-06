@@ -63,34 +63,34 @@
 
   //transition: all 1s ease-in-out;
 }
-
-.slider__btn--left,
-.slider__btn--right {
-  order: none;
-  background: rgba(255, 255, 255, 0.7);
-  font-family: inherit;
-  color: #333;
-  border: none;
-  border-radius: 50%;
-  height: 5.5rem;
-  width: 5.5rem;
-  font-size: 3.25rem;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-}
-.slider__btn--left {
-  position: absolute;
-  top: 50%;
-  left: 1rem;
-  z-index: 1;
-}
-.slider__btn--right {
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  z-index: 1;
-}
+//slider test
+// .slider__btn--left,
+// .slider__btn--right {
+//   order: none;
+//   background: rgba(255, 255, 255, 0.7);
+//   font-family: inherit;
+//   color: #333;
+//   border: none;
+//   border-radius: 50%;
+//   height: 5.5rem;
+//   width: 5.5rem;
+//   font-size: 3.25rem;
+//   display: grid;
+//   place-items: center;
+//   cursor: pointer;
+// }
+// .slider__btn--left {
+//   position: absolute;
+//   top: 50%;
+//   left: 1rem;
+//   z-index: 1;
+// }
+// .slider__btn--right {
+//   position: absolute;
+//   top: 50%;
+//   right: 1rem;
+//   z-index: 1;
+// }
 
 .box__header {
   display: flex;
